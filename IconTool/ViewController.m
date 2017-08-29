@@ -109,7 +109,7 @@
     NSData *imageData = [image TIFFRepresentation];
     
     NSBitmapImageRep *imageRep = [NSBitmapImageRep imageRepWithData:imageData];
-    NSData *newImageData = [imageRep representationUsingType:NSPNGFileType properties:nil];
+    NSData *newImageData = [imageRep representationUsingType:NSPNGFileType properties:[NSDictionary dictionary]];
     
     NSMutableString *fileName = [NSMutableString stringWithString:@"Icon"];
     switch (device) {
