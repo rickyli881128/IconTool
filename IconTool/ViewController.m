@@ -79,6 +79,8 @@
     
     [self resizeIconAndSave:filePath outPutPath:self.iosPath size:83.5f device:Device_IPad scale:2];
     
+    [self resizeIconAndSave:filePath outPutPath:self.iosPath size:1024 device:Device_AppStore scale:1];
+    
     //android
     NSString *xhdpiPath = [NSString stringWithFormat:@"%@/drawable-xhdpi", self.androidPath];
     [[NSFileManager defaultManager] createDirectoryAtPath:xhdpiPath withIntermediateDirectories:YES attributes:nil error:nil];
@@ -123,6 +125,14 @@
             
         case Device_IPad: {
             [fileName appendFormat:@"-ipad-%dpt", (int)size_];
+            if (scale > 1) {
+                [fileName appendFormat:@"@%dx", scale];
+            }
+            [fileName appendString:@".png"];
+        } break;
+            
+        case Device_AppStore: {
+            [fileName appendFormat:@"-%dpt", (int)size_];
             if (scale > 1) {
                 [fileName appendFormat:@"@%dx", scale];
             }

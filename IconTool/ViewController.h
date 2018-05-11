@@ -12,6 +12,7 @@ typedef enum
 {
     Device_IPhone = 0,
     Device_IPad,
+    Device_AppStore,
     Device_Android
 } Device;
 
