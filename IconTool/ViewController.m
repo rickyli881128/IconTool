@@ -116,7 +116,7 @@
     NSMutableString *fileName = [NSMutableString stringWithString:@"Icon"];
     switch (device) {
         case Device_IPhone: {
-            [fileName appendFormat:@"-iphone-%dpt", (int)size_];
+            [fileName appendFormat:@"-iphone-%d", (int)size_];
             if (scale > 1) {
                 [fileName appendFormat:@"@%dx", scale];
             }
@@ -124,7 +124,7 @@
         } break;
             
         case Device_IPad: {
-            [fileName appendFormat:@"-ipad-%dpt", (int)size_];
+            [fileName appendFormat:@"-ipad-%d", (int)size_];
             if (scale > 1) {
                 [fileName appendFormat:@"@%dx", scale];
             }
@@ -132,7 +132,7 @@
         } break;
             
         case Device_AppStore: {
-            [fileName appendFormat:@"-%dpt", (int)size_];
+            [fileName appendFormat:@"-%d", (int)size_];
             if (scale > 1) {
                 [fileName appendFormat:@"@%dx", scale];
             }
