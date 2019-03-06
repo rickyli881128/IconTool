@@ -7,6 +7,7 @@
 //
 
 #import "NSImage+RoundCorner.h"
+#import "define.h"
 
 @implementation NSImage (RoundCorner)
 
@@ -37,15 +38,16 @@
         return self;
     }
     
-    int w = (int) self.size.width;
-    int h = (int) self.size.height;
+    float scale = maxScreenScaleFactor();
+    int w = (int)(self.size.width * scale);
+    int h = (int)(self.size.height * scale);
     
     CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
     CGContextRef context = CGBitmapContextCreate(NULL, w, h, 8, 4 * w, colorSpace, kCGImageAlphaPremultipliedFirst);
     
     CGContextBeginPath(context);
     CGRect rect = CGRectMake(0, 0, w, h);
-    [self addRoundedRectToPath:context rect:rect ovalWidth:radius ovalHeight:radius];
+    [self addRoundedRectToPath:context rect:rect ovalWidth:radius * scale ovalHeight:radius * scale];
     CGContextClosePath(context);
     CGContextClip(context);
     

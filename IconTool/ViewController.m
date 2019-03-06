@@ -83,23 +83,23 @@
     [self resizeIconAndSave:filePath outPutPath:self.iosPath size:1024 radius:0 device:Device_AppStore scale:1];
     
     //android
-    NSString *xxhdpiPath = [NSString stringWithFormat:@"%@/drawable-xxhdpi", self.androidPath];
+    NSString *xxhdpiPath = [NSString stringWithFormat:@"%@/mipmap-xxhdpi", self.androidPath];
     [[NSFileManager defaultManager] createDirectoryAtPath:xxhdpiPath withIntermediateDirectories:YES attributes:nil error:nil];
     [self resizeIconAndSave:filePath outPutPath:xxhdpiPath size:144 radius:15 device:Device_Android scale:1];
     
-    NSString *xhdpiPath = [NSString stringWithFormat:@"%@/drawable-xhdpi", self.androidPath];
+    NSString *xhdpiPath = [NSString stringWithFormat:@"%@/mipmap-xhdpi", self.androidPath];
     [[NSFileManager defaultManager] createDirectoryAtPath:xhdpiPath withIntermediateDirectories:YES attributes:nil error:nil];
     [self resizeIconAndSave:filePath outPutPath:xhdpiPath size:96 radius:10 device:Device_Android scale:1];
     
-    NSString *hdpiPath = [NSString stringWithFormat:@"%@/drawable-hdpi", self.androidPath];
+    NSString *hdpiPath = [NSString stringWithFormat:@"%@/mipmap-hdpi", self.androidPath];
     [[NSFileManager defaultManager] createDirectoryAtPath:hdpiPath withIntermediateDirectories:YES attributes:nil error:nil];
     [self resizeIconAndSave:filePath outPutPath:hdpiPath size:72 radius:7 device:Device_Android scale:1];
     
-    NSString *ldpiPath = [NSString stringWithFormat:@"%@/drawable-ldpi", self.androidPath];
+    NSString *ldpiPath = [NSString stringWithFormat:@"%@/mipmap-ldpi", self.androidPath];
     [[NSFileManager defaultManager] createDirectoryAtPath:ldpiPath withIntermediateDirectories:YES attributes:nil error:nil];
     [self resizeIconAndSave:filePath outPutPath:ldpiPath size:48 radius:6 device:Device_Android scale:1];
     
-    NSString *mdpiPath = [NSString stringWithFormat:@"%@/drawable-mdpi", self.androidPath];
+    NSString *mdpiPath = [NSString stringWithFormat:@"%@/mipmap-mdpi", self.androidPath];
     [[NSFileManager defaultManager] createDirectoryAtPath:mdpiPath withIntermediateDirectories:YES attributes:nil error:nil];
     [self resizeIconAndSave:filePath outPutPath:mdpiPath size:36 radius:5 device:Device_Android scale:1];
 }
@@ -145,7 +145,7 @@
         } break;
             
         case Device_Android: {
-            fileName = [NSMutableString stringWithString:@"icon.png"];
+            fileName = [NSMutableString stringWithString:@"ic_launcher.png"];
         } break;
             
         default:
