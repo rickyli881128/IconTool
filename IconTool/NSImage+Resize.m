@@ -16,7 +16,7 @@
     NSImage *resizedImage = [[NSImage alloc] initWithSize:rect.size];
     
     [resizedImage lockFocus];
-    [self drawInRect:rect fromRect:NSZeroRect operation:NSCompositeSourceOver fraction: 1.0];
+    [self drawInRect:rect fromRect:NSZeroRect operation:NSCompositeSourceOver fraction:1.0];
     [resizedImage unlockFocus];
     
     return resizedImage;

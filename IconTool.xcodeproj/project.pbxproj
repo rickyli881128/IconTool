@@ -15,6 +15,7 @@
 		9CDE3FBA1BA16941009276FE /* IconMakerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CDE3FB91BA16941009276FE /* IconMakerTests.m */; };
 		9CDE3FC51BA16BAA009276FE /* DropImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CDE3FC41BA16BAA009276FE /* DropImageView.m */; };
 		9CDE3FCE1BA18731009276FE /* NSImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CDE3FCD1BA18731009276FE /* NSImage+Resize.m */; };
+		9CFB1EA6222F97F8005DC408 /* NSImage+RoundCorner.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9CFB1EA5222F97F8005DC408 /* NSImage+RoundCorner.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,8 @@
 		9CDE3FC41BA16BAA009276FE /* DropImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DropImageView.m; sourceTree = "<group>"; };
 		9CDE3FCC1BA18731009276FE /* NSImage+Resize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSImage+Resize.h"; sourceTree = "<group>"; };
 		9CDE3FCD1BA18731009276FE /* NSImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSImage+Resize.m"; sourceTree = "<group>"; };
+		9CFB1EA4222F97F8005DC408 /* NSImage+RoundCorner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSImage+RoundCorner.h"; sourceTree = "<group>"; };
+		9CFB1EA5222F97F8005DC408 /* NSImage+RoundCorner.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "NSImage+RoundCorner.mm"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +97,8 @@
 				9CDE3FC41BA16BAA009276FE /* DropImageView.m */,
 				9CDE3FCC1BA18731009276FE /* NSImage+Resize.h */,
 				9CDE3FCD1BA18731009276FE /* NSImage+Resize.m */,
+				9CFB1EA4222F97F8005DC408 /* NSImage+RoundCorner.h */,
+				9CFB1EA5222F97F8005DC408 /* NSImage+RoundCorner.mm */,
 				9C51D89E1BA27EB400F70213 /* define.h */,
 				9CDE3FAA1BA16940009276FE /* Images.xcassets */,
 				9CDE3FAC1BA16941009276FE /* Main.storyboard */,
@@ -232,6 +237,7 @@
 				9CDE3FA91BA16940009276FE /* ViewController.m in Sources */,
 				9CDE3FC51BA16BAA009276FE /* DropImageView.m in Sources */,
 				9CDE3FA61BA16940009276FE /* main.m in Sources */,
+				9CFB1EA6222F97F8005DC408 /* NSImage+RoundCorner.mm in Sources */,
 				9CDE3FA41BA16940009276FE /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
